@@ -14,7 +14,7 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg text-black"
+      className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg text-black text-start"
     >
       <div className="mb-6">
         <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -53,7 +53,7 @@ const Form: React.FC = () => {
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
         />
       </div>
       <Button form={true} label="Submit" onClick={ () => handleSubmit} />
