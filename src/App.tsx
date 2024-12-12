@@ -6,6 +6,7 @@ import Img4 from "./assets/img4.jpg";
 import TrustedBySection from "./components/TrustedBySection";
 import ParallaxCards from "./components/Paralex";
 import Accordion from "./components/Accordion";
+import IntroVideo from "./components/IntroVideo";
 
 const App: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -43,6 +44,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </section>
+      <IntroVideo />
       <TrustedBySection />
       <ParallaxCards />
 
